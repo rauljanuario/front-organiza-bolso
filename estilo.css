@@ -1,0 +1,102 @@
+/* Reseta as margens e define a fonte padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Fundo da tela levemente acinzentado para destacar o formulário branco */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f7fbff; 
+}
+
+/* Caixa principal do formulário */
+.cadastro-container {
+    background-color: #ffffff;
+    padding: 40px 32px;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 380px;
+    text-align: center;
+}
+
+/* Círculo azul claro em volta do ícone */
+.icone-usuario {
+    width: 72px;
+    height: 72px;
+    margin: 0 auto 24px;
+    background-color: #e3f2fd; /* Azul claro para o fundo do ícone */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #42a5f5; /* Azul mais forte para a linha do ícone */
+}
+
+.icone-usuario svg {
+    width: 36px;
+    height: 36px;
+}
+
+h2 {
+    margin-bottom: 28px;
+    color: #333333;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.campo-input {
+    margin-bottom: 16px;
+}
+
+/* Estilo minimalista dos campos de texto */
+.campo-input input {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1.5px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 15px;
+    outline: none;
+    transition: all 0.3s ease;
+    background-color: #ffffff;
+    color: #333;
+}
+
+.campo-input input::placeholder {
+    color: #a0aab2;
+}
+
+/* Efeito azul claro quando o usuário clica no campo */
+.campo-input input:focus {
+    border-color: #64b5f6; 
+    box-shadow: 0 0 0 4px rgba(100, 181, 246, 0.15);
+}
+
+/* Botão de cadastro */
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #42a5f5; /* Azul claro principal */
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    margin-top: 12px;
+}
+
+button:hover {
+    background-color: #2196f3; /* Fica um pouco mais escuro ao passar o mouse */
+}
+
+button:active {
+    transform: scale(0.98);
+}
